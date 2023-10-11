@@ -1,0 +1,76 @@
+body{
+    font-family: 'Major Mono Display';
+    background-image: linear-gradient(to bottom, rgba(255,224,60,81),rgba(255,224,60,81), rgba(255,255,255));
+    background-repeat: no-repeat;
+    font-size: 130px;
+    overflow: hidden;
+}
+
+
+button{
+    font-family: 'Major Mono Display';
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    height: 770px;
+}
+
+
+button{
+    padding: 5px;
+    font-size: 30px;
+    width: 300px;
+    background: rgba(255,224,60,0.81);
+    border: white;
+    transition: all 0.6s;
+}
+
+button:hover{
+    background: rgba(255,255,255,0.52);
+    transition: 0.3s;
+    box-shadow: 2px 7px #c2c2c2;
+}
+
+.g:active{
+    box-shadow: 1px 5px #666;
+    transform: translateY(4px);
+}
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    left: 300px;
+    bottom: 16px;
+    border-collapse: collapse;
+    background-color: rgba(255,224,60,0.52);
+    z-index:1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 16px 16px;
+    display: block;
+    font-size: 15px;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.52);
+    box-shadow: 1px 5px #666;
+}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+
+}
+.dropdown:hover .btn{background-color: rgba(255,224,60,0.81);}

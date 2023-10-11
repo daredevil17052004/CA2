@@ -1,0 +1,71 @@
+body{
+    font-family: 'Major Mono Display';
+    background-image: linear-gradient(to bottom, rgba(255,224,60,81),rgba(255,224,60,81), rgba(255,255,255));
+    background-repeat: no-repeat;
+    font-size: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+   margin-left: 40px;
+   font-size: 40px; 
+   margin-top: 10px;
+}
+.right{
+    margin-right: 40px;
+    font-size: 30px;
+    border: 1px solid white;
+    background-color: rgba(255,255,255,0.52);
+    border-radius: 10px;
+    padding: 13px;
+    margin-top: 10px;
+}
+
+.tiles{
+    display: grid;
+    grid-template-columns: repeat(5,270px);
+    grid-template-rows: repeat(4,152px);
+    grid-gap: 15px;
+    perspective: 1000px; 
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    padding-top: 30px;
+    background-color: rgba(217,217,217,0.52);
+    border-radius: 20px;
+    justify-content: center;
+}
+
+
+.flip{
+    transform: rotateY(180deg);
+}
+.card{
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    position: relative;
+}
+
+.front-face, .back-face{
+    backface-visibility: hidden;
+    position: absolute;
+    object-fit: contain;
+}
+
+.front-face{
+    transform: rotateY(180deg);
+}
+
+.card img{
+    width: 270px;
+    height: 152px;
+}
