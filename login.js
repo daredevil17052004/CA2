@@ -5,33 +5,35 @@ let next  = document.getElementById('next');
 
 if(d === 'bolly'){
     next.onclick = () =>{
-        location.href = 'iterationB.html';
+        location.href = 'bolly.html';
     }
 }
 
 else if(d === 'jap'){
     next.onclick = () =>{
-        location.href = 'iternationJ.html';
+        location.href = 'jap.html';
     }
 }
 else if(d === 'harry'){
     next.onclick = () =>{
-        location.href = 'iterationH.html';
+        location.href = 'harry.html';
     }
 }
 else if(d === 'people'){
     next.onclick = () =>{
-        location.href = 'iterationP.html';
+        location.href = 'people.html';
     }
 }
 
 
 let names = document.getElementById('name');
+// names.defaultValue = 'Player';
 let nick = document.getElementById('nick');
+// nick.defaultValue = 'PlayerDash';
 
 names.onchange = () =>{
     localStorage.setItem('name', names.value);
 }
 nick.onchange = () =>{
-    localStorage.setItem('nick', nick.value)
+    localStorage.setItem('nick', nick.value);
 }
