@@ -24,6 +24,7 @@ body{
     margin-top: 50px;
     justify-content: space-between;
     width: 420px;
+    flex-wrap: wrap;
 }
 .high{
     margin-top: 20px;
@@ -44,6 +45,7 @@ body{
     width: 500px;
     justify-content: space-between;
     margin-top: 50px;
+    flex-wrap: wrap;
 }
 button{
     padding: 20px;
@@ -82,5 +84,57 @@ button:hover {
     transform: translateY(4px);
 }
 
+@media all and (max-width:500px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: 400px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 30px;
+        margin-top: 80px;
+        background-color: rgba(255,255,255,0.52);
+        border-radius: 20px;
 
-
+    }
+    .score{
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        width: 380px;
+    }
+    .high{
+        margin-top: 20px;
+        font-size: 35px;
+    }
+    .item{
+        margin-top: 15px;
+    }
+    .ti{
+        margin-top: 15px;
+    }
+    
+    .buttons{
+        display: flex;
+        margin-left: 30px;
+        width: 400px;
+        justify-content: space-between;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    
+    button{
+        padding: 20px;
+        width: 150px;
+        font-family:'Major Mono Display' ;
+        font-size: 20px;
+        border: 1px solid white;
+        transition: all 0.5s;
+        /* background-color: rgba(255,224,60,0.81); */
+        background: transparent;
+        border-radius: 10px;
+    }   
+    
+    
+}

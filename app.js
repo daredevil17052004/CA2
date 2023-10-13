@@ -43,3 +43,8 @@ function randomise(){
 };
 randomise();
 
+
+const backAudio = new Audio('./beauty.mp3');
+backAudio.play();
+backAudio.loop;
+backAudio.volume = 0.3; 

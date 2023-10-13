@@ -97,3 +97,53 @@ button{
 .right{
     display: flex;
 }
+
+
+
+
+@media all and (max-width:500px){
+    .tiles{
+        display: grid;
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(10,113px);
+        grid-gap: 15px;
+        perspective: 1000px; 
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 10px;
+        padding: 10px;
+        padding-top: 30px;
+        background-color: rgba(217,217,217,0.52);
+        border-radius: 20px;
+        justify-content: center;
+    }
+    .card img{
+        width: 200px;
+        height: 113px;
+    }
+    .left{
+        margin-left: 40px;
+        font-size: 30px; 
+        margin-top: 10px;
+     }
+     .right{
+         /* margin-right: 40px; */
+         font-size: 20px;
+         border: 1px solid white;
+         background-color: rgba(255,255,255,0.52);
+         border-radius: 10px;
+         padding: 13px;
+         margin-top: 10px;
+     }
+     button{
+         font-size: 20px;
+         font-family: 'Major Mono Display';
+         border: 1px solid white;
+         background-color: rgba(255,255,255,0.52);
+         border-radius: 10px;
+         padding: 13px;
+         margin-top: 10px;
+         cursor: pointer;
+     }
+     
+}
